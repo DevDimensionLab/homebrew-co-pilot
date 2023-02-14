@@ -5,21 +5,21 @@
 class CoPilot < Formula
   desc "Co-pilot is a developer tool for automating common tasks on a spring boot project."
   homepage "https://devdimensionlab.github.io/"
-  version "0.6.22"
+  version "0.6.23"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.22/co-pilot_0.6.22_Darwin_arm64.tar.gz"
-      sha256 "33f41a4de4a75bc30948ae1eb7e7e8f72b190054d0d8d556f363fb3fcc140712"
+      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.23/co-pilot_0.6.23_Darwin_arm64.tar.gz"
+      sha256 "d3da408aaa3d574f0ed9a27c04750bdb5fb1d9517835a572c7d1648b3a494300"
 
       def install
         bin.install "co-pilot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.22/co-pilot_0.6.22_Darwin_x86_64.tar.gz"
-      sha256 "3ea85b7fa9472f0258b65108c991c1dd8e9ae6cb7af7a2911050c190345437f8"
+      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.23/co-pilot_0.6.23_Darwin_x86_64.tar.gz"
+      sha256 "0f8b0d9474d9ae73616737e9538264a89828832f6bddb4b66031be76c5357437"
 
       def install
         bin.install "co-pilot"
@@ -29,16 +29,16 @@ class CoPilot < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.22/co-pilot_0.6.22_Linux_arm64.tar.gz"
-      sha256 "8118900a9754da8d22ec470d902c8c1faed7cab72a78b76b436b46287088a222"
+      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.23/co-pilot_0.6.23_Linux_arm64.tar.gz"
+      sha256 "5c3d756156ea96e70a9d241a47ab5f087d09d8f07a0af778c754703fac86cb8e"
 
       def install
         bin.install "co-pilot"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.22/co-pilot_0.6.22_Linux_x86_64.tar.gz"
-      sha256 "fac31f83cf463de4dc79c80f8089e307de1d553507a6b6e8b2387ec0e4154618"
+      url "https://github.com/devdimensionlab/co-pilot/releases/download/v0.6.23/co-pilot_0.6.23_Linux_x86_64.tar.gz"
+      sha256 "4f33993f72cc82509eec5288e0e5b3d12ded3a706d45b35d1c2e1d5c672dcd10"
 
       def install
         bin.install "co-pilot"
